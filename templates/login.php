@@ -125,7 +125,7 @@
                                             Enter your email and to receive instructions
                                         </p>
 
-                                        <form>
+                                        <form method="get" action="modules/retrieve.php" >
                                             <fieldset>
                                                 <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
@@ -135,7 +135,7 @@
                                                 </label>
 
                                                 <div class="clearfix">
-                                                    <button type="button" class="width-35 pull-right btn btn-sm btn-danger">
+                                                    <button type="submit" class="width-35 pull-right btn btn-sm btn-danger">
                                                         <i class="ace-icon fa fa-lightbulb-o"></i>
                                                         <span class="bigger-110">Send Me!</span>
                                                     </button>

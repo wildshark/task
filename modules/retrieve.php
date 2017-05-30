@@ -23,5 +23,7 @@ if (!$row= $result->fetch_assoc()){
     // $_SESSION['username']= "Username ".$username."<br>";
     // $_SESSION['Password']= "Password ".$password."<br>";
 
-    header("location: ../retrieve.php?page=password&name=$username&password=$password&success");
+    echo $user_email;
+
+ //   header("location: ../retrieve.php?page=password&name=$username&password=$password&success");
 }
