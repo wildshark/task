@@ -34,5 +34,7 @@ if (!$row= $result->fetch_assoc()){
     $_SESSION['userID']=$userID;
     $_SESSION['photo']=$userPath;
     $_SESSION['mobile']=$row['MobileNo'];
+    $_SESSION['createDate']=$row['CreatedDate'];
+
     header("location: ../page.php?user=dashboard");
 }
