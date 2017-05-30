@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a41d1a5-ae96-4173-87bd-ab10f4f83874" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/new_task.php" afterPath="$PROJECT_DIR$/modules/newtask.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/newtask.php" afterPath="$PROJECT_DIR$/views/newtask.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/newtask.php" afterPath="$PROJECT_DIR$/modules/newtask.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard.php" afterPath="$PROJECT_DIR$/views/dashboard.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,11 +95,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newtask.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/newtask.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <folding>
+                <marker date="1496151874393" expanded="true" signature="660:896" ph="INSERT INTO user_task... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="174" column="28" lean-forward="false" selection-start-line="174" selection-start-column="28" selection-end-line="174" selection-end-column="28" />
+              <folding>
+                <marker date="1496151945811" expanded="true" signature="165:223" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="401:472" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="660:743" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="918:978" ph="SELECT Count... user_account" />
+                <marker date="1496151945811" expanded="true" signature="1189:1273" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="1398:1502" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="1963:2045" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="2175:2277" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="2727:2785" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="2902:2982" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="3429:3487" ph="SELECT Count... user_task" />
+                <marker date="1496151945811" expanded="true" signature="3604:3684" ph="SELECT Count... user_task" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420">
+              <caret line="290" column="63" lean-forward="false" selection-start-line="290" selection-start-column="63" selection-end-line="290" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -142,7 +187,6 @@
         <option value="$PROJECT_DIR$/views/messager.php" />
         <option value="$PROJECT_DIR$/templates/default.php" />
         <option value="$PROJECT_DIR$/templates/dashboard.php" />
-        <option value="$PROJECT_DIR$/views/dashboard.php" />
         <option value="$PROJECT_DIR$/views/chat.php" />
         <option value="$PROJECT_DIR$/templates/error-500.php" />
         <option value="$PROJECT_DIR$/templates/error-404.php" />
@@ -169,6 +213,8 @@
         <option value="$PROJECT_DIR$/modules/msg.update.php" />
         <option value="$PROJECT_DIR$/views/newtask.php" />
         <option value="$PROJECT_DIR$/db/db.php" />
+        <option value="$PROJECT_DIR$/modules/newtask.php" />
+        <option value="$PROJECT_DIR$/views/dashboard.php" />
       </list>
     </option>
   </component>
@@ -203,6 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,8 +321,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,17 +435,19 @@
       <workItem from="1496143104305" duration="1301000" />
       <workItem from="1496146530174" duration="624000" />
       <workItem from="1496149350042" duration="600000" />
-      <workItem from="1496151286612" duration="397000" />
+      <workItem from="1496151286612" duration="1261000" />
+      <workItem from="1496157428136" duration="191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52778000" />
+    <option name="totallyTimeSpent" value="53833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1732224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17549168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -666,17 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/newtask.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="false" />
-            <marker date="1496021769309" expanded="true" signature="660:896" ph="INSERT INTO user_task... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/assets/css/ace.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -823,28 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3197">
-          <caret line="261" column="66" lean-forward="false" selection-start-line="261" selection-start-column="66" selection-end-line="261" selection-end-column="66" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="false" />
-            <marker date="1496016834438" expanded="true" signature="165:223" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="401:472" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="660:743" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="918:978" ph="SELECT Count... user_account" />
-            <marker date="1496016834438" expanded="true" signature="1189:1273" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="1398:1502" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="1963:2045" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="2175:2277" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="2727:2785" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="2902:2982" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="3429:3487" ph="SELECT Count... user_task" />
-            <marker date="1496016834438" expanded="true" signature="3604:3684" ph="SELECT Count... user_task" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
@@ -932,16 +947,6 @@
         <state relative-caret-position="680">
           <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6620">
-          <caret line="331" column="44" lean-forward="false" selection-start-line="331" selection-start-column="44" selection-end-line="331" selection-end-column="44" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,9 +1050,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="280">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/newtask.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <marker date="1496151874393" expanded="true" signature="660:896" ph="INSERT INTO user_task... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="290" column="63" lean-forward="false" selection-start-line="290" selection-start-column="63" selection-end-line="290" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="174" column="28" lean-forward="false" selection-start-line="174" selection-start-column="28" selection-end-line="174" selection-end-column="28" />
+          <folding>
+            <marker date="1496151945811" expanded="true" signature="165:223" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="401:472" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="660:743" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="918:978" ph="SELECT Count... user_account" />
+            <marker date="1496151945811" expanded="true" signature="1189:1273" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="1398:1502" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="1963:2045" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="2175:2277" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="2727:2785" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="2902:2982" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="3429:3487" ph="SELECT Count... user_task" />
+            <marker date="1496151945811" expanded="true" signature="3604:3684" ph="SELECT Count... user_task" />
+          </folding>
         </state>
       </provider>
     </entry>

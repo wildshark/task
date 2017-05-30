@@ -40,4 +40,4 @@ $sql= "INSERT INTO user_task( taskDate,Assign_to,Subject,Priority,DueDate,Note,A
 
 $result=$conn->query($sql);
 
-header("location: ../page.php?user=new_task&success=ok");
+header("location: ../page.php?user=new_task");
