@@ -9,7 +9,7 @@
 ?>
 <div class='col-sm-6'>
     <h3 class='header smaller lighter red'>New Task</h3>
-    <form action='module/new_task.php' method='get' class='form-horizontal' role='form' enctype='application/x-www-form-urlencoded'>
+    <form action='module/newtask.php' method='get' class='form-horizontal' role='form' enctype='application/x-www-form-urlencoded'>
 
         <div class='form-group'>
             <label  class='col-xs-2 control-label no-padding-right' for='id-date-picker-1'>Date</label>
