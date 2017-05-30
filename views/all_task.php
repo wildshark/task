@@ -33,13 +33,13 @@
                     </th>
                     <th>Date</th>
                     <th>Assign To</th>
-                    <th class="hidden-480">Subject</th>
+                    <th class="hidden-480">Thing to do</th>
 
                     <th>
                         <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
                         Due Date
                     </th>
-                    <th class="hidden-480">Status</th>
+                    <th class="hidden-480">Priority</th>
 
                     <th></th>
                 </tr>
@@ -48,7 +48,8 @@
                 <tbody>
 
                 <?php
-                $sql="SELECT * FROM user_task";
+                $userID=$_SESSION['userID'];
+                $sql="SELECT * FROM user_task WHERE userID='$userID' ORDER BY taskDate DESC";
                 $result=$conn->query($sql);
                 while ($row=$result->fetch_assoc()){
                     if ($row['Priority']==1){

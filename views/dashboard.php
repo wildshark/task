@@ -180,25 +180,17 @@ $pageData->deptpend=getDeptPending($conn);
                 <div class='input-group'>
                     <input name='date' class='form-control date-picker' id='id-date-picker-1' type='date' data-date-format='dd-mm-yyyy' />
                     <span class='input-group-addon'>
-								    <i class='fa fa-calendar bigger-110'></i>
-								</span>
+						<i class='fa fa-calendar bigger-110'></i>
+					</span>
                 </div>
             </div>
         </div>
 
         <div class='form-group'>
-            <label class='col-sm-2 control-label no-padding-right' for='form-field-1'> Task Subject</label>
+            <label class='col-sm-2 control-label no-padding-right' for='form-field-1'> Things to do </label>
 
             <div class='col-sm-8'>
                 <input name='task_subject' type='text' id='form-field-1' placeholder='Task Subject' class='col-xs-10 col-sm-10' />
-            </div>
-        </div>
-
-        <div class='form-group'>
-            <label class='col-sm-2 control-label no-padding-right' for='form-field-1'>Task</label>
-
-            <div class='col-sm-8'>
-                <textarea name='note' type='text' id='form-field-8' class='col-xs-10 col-sm-10' placeholder='Task'></textarea>
             </div>
         </div>
 
@@ -208,13 +200,16 @@ $pageData->deptpend=getDeptPending($conn);
                 <div class='input-group'>
                     <input name='due_date' class='form-control date-picker' id='id-date-picker-1' type='due_date' data-date-format='dd-mm-yyyy' />
                     <span class='input-group-addon'>
-								    <i class='fa fa-calendar bigger-110'></i>
-								</span>
+						<i class='fa fa-calendar bigger-110'></i>
+					</span>
                 </div>
             </div>
         </div>
 
         <div class='form-group'>
+            <input type="hidden" name="assign_to" value="<?php echo $_SESSION['FullName'];?>">
+            <input type="hidden" name="userid" value="<?php echo $_SESSION['userID'];?>">
+            <input type="hidden" name='note' VALUE="test">
             <button type='submit' class='btn btn-sm btn-primary'>
                 <i class='ace-icon fa fa-comment-o  align-top bigger-125'></i>
                 Submit Task

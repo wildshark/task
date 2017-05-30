@@ -6,6 +6,7 @@
  * Time: 1:16 AM
  */
 
+
 ?>
 <div class='col-sm-6'>
     <h3 class='header smaller lighter red'>New Task</h3>
@@ -17,28 +18,19 @@
                 <div class='input-group'>
                     <input name='date' class='form-control date-picker' id='id-date-picker-1' type='text' data-date-format='dd-mm-yyyy' placeholder='dd-mm-yyyy' />
                     <span class='input-group-addon'>
-								    <i class='fa fa-calendar bigger-110'></i>
-								</span>
+						<i class='fa fa-calendar bigger-110'></i>
+					</span>
                 </div>
             </div>
         </div>
 
         <div class='form-group'>
-            <label  class='col-sm-2 control-label no-padding-right' for='form-field-1'> Task Subject</label>
+            <label  class='col-sm-2 control-label no-padding-right' for='form-field-1'> Things to do </label>
 
             <div class='col-sm-8'>
-                <input name='task_subject' type='text' id='form-field-1' placeholder='Task Subject' class='col-xs-10 col-sm-10' />
+                <input name='task_subject' type='text' id='form-field-1' placeholder='Things to do' class='col-xs-10 col-sm-10' />
             </div>
         </div>
-
-        <div class='form-group'>
-            <label class='col-sm-2 control-label no-padding-right' for='form-field-1'> Assigned to</label>
-
-            <div class='col-sm-8'>
-                <input name='assign_to' type='text' id='form-field-select-1' class='col-xs-10 col-sm-10' placeholder='Assigned to'>
-            </div>
-        </div>
-
 
         <div class='form-group'>
             <label class='col-sm-2 control-label no-padding-right' for='form-field-1'> Priority</label>
@@ -72,6 +64,8 @@
         </div>
 
         <div class='form-group'>
+            <input type="hidden" name="assign_to" value="<?php echo $_SESSION['FullName'];?>">
+            <input type="hidden" name="userid" value="<?php echo $_SESSION['userID'];?>">
             <button type='submit' class='btn btn-sm btn-primary'>
                 <i class='ace-icon fa fa-comment-o  align-top bigger-125'></i>
                 Submit Task

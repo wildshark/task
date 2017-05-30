@@ -39,7 +39,7 @@
                         <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
                         Due Date
                     </th>
-                    <th class="hidden-480">Status</th>
+                    <th class="hidden-480">Priority</th>
 
                     <th></th>
                 </tr>
@@ -48,7 +48,8 @@
                 <tbody>
 
                 <?php
-                $sql="SELECT * FROM user_task WHERE statusID='2'";
+                $userID=$_SESSION['userID'];
+                $sql="SELECT * FROM user_task WHERE statusID='2' AND userID='$userID' ORDER BY taskDate DESC";
                 $result=$conn->query($sql);
                 while ($row=$result->fetch_assoc()){
                     if ($row['Priority']==1){
