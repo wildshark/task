@@ -7,19 +7,18 @@
  */
 
 include_once "db/db.php";
-
 function getMessager($conn){
-    $msgSQL="SELECT * FROM messager";
+    $msgSQL="SELECT * FROM messager WHERE readID=1";
     $msgResult=$conn->query($msgSQL);
     while ($msgRow=$msgResult->fetch_assoc()){
         echo"
      <li>
-         <a href='#' class='clearfix'>
-            <img src='assets/images/avatars/avatar.png' class='msg-photo' alt='Alex's Avatar' />
+         <a href='modules/msg.update.php?msg=".$msgRow['messageID']."' class='clearfix'>
+            <img src='templates/assets/images/avatars/avatar.png' class='msg-photo' alt='Alex's Avatar' />
                 <span class='msg-body'>
 	    			<span class='msg-title'>
 					<span class='blue'>".$msgRow['userForm'].":</span>
-                        ".$msgRow['note']."
+                        ".$msgRow['userMessager']."
 					</span>
 
 					<span class='msg-time'>
@@ -32,8 +31,9 @@ function getMessager($conn){
     }
 }
 
+
 function getNoOfMessage($conn){
-    $sql="SELECT Count(createDate) As msg FROM messager";
+    $sql="SELECT Count(messageID) As msg FROM messager WHERE readID=1";
     $msgResult=$conn->query($sql);
     $msgRow=$msgResult->fetch_assoc();
 

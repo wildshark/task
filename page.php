@@ -7,6 +7,7 @@
  */
 session_start();
 $page=$_GET['user'];
+include_once "db/db.php";
 //echo $_SESSION['username'];
 if (empty($_SESSION['username'])){
 
