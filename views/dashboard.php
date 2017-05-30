@@ -172,7 +172,7 @@ $pageData->deptpend=getDeptPending($conn);
         <span class='badge badge-pink'><?php echo $pageData->totalteam ?></span>
     </a>
     <h3 class='header smaller lighter green'>Quick Task</h3>
-    <form action='module/newtask.php' method='get' class='form-horizontal' role='form' enctype='application/x-www-form-urlencoded'>
+    <form action='modules/newtask.php' method='get' class='form-horizontal' role='form' enctype='application/x-www-form-urlencoded'>
 
         <div class='form-group'>
             <label  class='col-xs-2 control-label no-padding-right' for='id-date-picker-1'>Start Date</label>
