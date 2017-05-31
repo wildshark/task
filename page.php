@@ -17,6 +17,7 @@ if (empty($_SESSION['username'])){
 }else{
     switch ($page){
 
+
         case "dashboard";
             include_once "config/config.php";
             include_once "modules/messager.php";

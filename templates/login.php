@@ -125,11 +125,11 @@
                                             Enter your email and to receive instructions
                                         </p>
 
-                                        <form method="get" action="modules/retrieve.php" >
+                                        <form role="form" method="get" action="modules/retrieve.php" enctype="application/x-www-form-urlencoded">
                                             <fieldset>
                                                 <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control" placeholder="Email" />
+															<input name="email" type="email" class="form-control" placeholder="Email" />
 															<i class="ace-icon fa fa-envelope"></i>
 														</span>
                                                 </label>
